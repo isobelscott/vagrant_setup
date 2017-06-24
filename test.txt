@@ -1,0 +1,23 @@
+total 248
+drwxr-xr-x  22 isobel  staff    748 Jun 24 10:04 .
+drwxr-xr-x+ 76 isobel  staff   2584 Jun 24 09:42 ..
+-rw-r--r--   1 isobel  staff   1858 Jun 10 10:53 ..gitignore.un~
+-rw-r--r--   1 isobel  staff   8221 Jun 23 11:29 .Vagrantfile.un~
+-rw-r--r--   1 isobel  staff   6549 Jun 15 21:16 .bootstrap.sh.un~
+drwxr-xr-x  17 isobel  staff    578 Jun 24 09:43 .git
+-rw-r--r--   1 isobel  staff   1247 Jun 24 09:43 .gitignore
+-rw-r--r--   1 isobel  staff   1177 Jun 10 10:48 .gitignore~
+drwxr-xr-x   3 isobel  staff    102 Jun 10 14:19 .vagrant
+-rw-r--r--   1 isobel  staff   3045 Jun 23 11:28 .vimrc.un~
+-rw-r--r--   1 isobel  staff   1065 Jun 10 10:46 LICENSE
+-rw-r--r--   1 isobel  staff     32 Jun 10 10:46 README.md
+drwxr-xr-x   7 isobel  staff    238 Jun 10 14:47 VENV
+-rw-r--r--   1 isobel  staff   3359 Jun 23 11:58 Vagrantfile
+-rw-r--r--   1 isobel  staff    230 Jun 23 11:27 Vagrantfile~
+-rw-r--r--   1 isobel  staff    435 Jun 10 14:14 bootstrap.sh~
+-rw-r--r--   1 isobel  staff     91 Jun 24 09:43 foo.py
+-rw-r--r--   1 isobel  staff  10303 Jun 15 18:17 index.html
+drwxr-xr-x  20 isobel  staff    680 Jun 24 09:28 nyu-python
+-rw-r--r--   1 isobel  staff      0 Jun 24 10:04 test.txt
+-rw-------   1 isobel  staff  46891 Jun 23 12:01 ubuntu-xenial-16.04-cloudimg-console.log
+-rw-r--r--   1 isobel  staff    804 Jun 15 18:17 vimrc~
