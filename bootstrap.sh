@@ -2,7 +2,7 @@
 #!/usr/bin/env bash
 
 apt-get update --fix-missing
-apt-get install vim git zlib1g-dev --assume-yes
+apt-get install vim wget git zlib1g-dev --assume-yes
 
 cd /home/vagrant/
 sudo wget https://www.python.org/ftp/python/3.6.1/Python-3.6.1.tar.xz
