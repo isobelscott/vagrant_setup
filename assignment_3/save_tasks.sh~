@@ -1,0 +1,17 @@
+#!/bin/bash
+
+newTask='Pick up dry cleaning'
+echo $newTask >> ~/task_database.txt
+
+newTask="when you see this the task text has been expanded" 
+echo $newTask
+echo "$newTask"
+echo '$newTask'
+
+echo "-------------"
+echo "first arg: $1"
+echo "============"
+echo "first arg: $2"
+echo "============"
+echo "first arg: $3"
+
