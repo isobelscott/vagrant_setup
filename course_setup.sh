@@ -1,8 +1,8 @@
 
 #!/bin/bash
 
-export course_dir="$HOME/npd"
-export course_scripts="$course_dir/c1_intro_programming/scripts"
+export course_dir="$HOME/nyu-python"
+export course_scripts="$course_dir/scripts"
 export course_current_branch="C1"
 export course_vars_loaded="true"
 
