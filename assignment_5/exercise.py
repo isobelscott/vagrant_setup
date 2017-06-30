@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 def to_fahrenheit(degrees_celsius):
     degrees_celsius = degrees_celsius * 1.8 + 32
     return degrees_celsius
