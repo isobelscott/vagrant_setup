@@ -49,12 +49,24 @@ def take_walk(steps):
 
         return current_location
 
+def take_all_walks(steps, runs):
+    endpoints = []
+    for walks in range(runs):
+        end_location = take_walk(steps)
+        endpoints.append(end_location[:], end_location[0], end_location[1])
+    return endpoints
+
+
 if __name__ == "__main__":
         steps = 10
         if len(sys.argv) > 1:
             steps = int(sys.argv[1])
-        current_location = take_walk(steps)
+        
+        runs = 1
+        if len(sys.argv) > 2:
+            steps = int(sys.argv[2])
 
-        print("Done with walk, printing end location: ")
-        print(current_location)
+        end_locations  = take_all_walks(steps, runs)
 
+        print("Done with all walks, printing all end locations: ")
+        print(end_locations)
