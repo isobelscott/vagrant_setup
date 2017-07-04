@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import random
 import sys
 
@@ -24,24 +26,17 @@ def get_direction_displacement(dir_key):
                 'south': (0, -1)
                 }
 
-                # access the dictionary
-                # UPDATE HERE: how do you use the key to access a dictionary?
-                # replace None with the answer
         return displacements[dir_key]
 
 def take_walk(steps):
         current_location = [0, 0]
+        
         for step_index in range(steps):
             direction = get_random_direction()
             displacement = get_direction_displacement(direction)
 
-        # extract the numerical values from the tuple
             delta_x = displacement[0]
             delta_y = displacement[1]
-
-        # UPDATE current_location HERE
-        # consult example in 'Storing and Updating State' for method to update
-        # current_location
 
             current_location = [0, 0]
             current_location[0] += delta_x
@@ -49,11 +44,18 @@ def take_walk(steps):
 
         return current_location
 
-def take_all_walks(steps, runs):
+def take_all_walks(steps):
+    endpoints = []
+    for walks in range(steps):
+        end_location = take_walk(steps)
+        endpoints.append(end_location)
+    return endpoints
+
+def take_all_runs(runs):
     endpoints = []
     for walks in range(runs):
-        end_location = take_walk(steps)
-        endpoints.append(end_location[:], end_location[0], end_location[1])
+        end_location = take_walk(runs)
+        endpoints.append(end_location)
     return endpoints
 
 
@@ -66,7 +68,8 @@ if __name__ == "__main__":
         if len(sys.argv) > 2:
             steps = int(sys.argv[2])
 
-        end_locations  = take_all_walks(steps, runs)
+        end_locations  = take_all_walks(steps)
+        end_location_runs = take_all_runs(runs)
 
-        print("Done with all walks, printing all end locations: ")
-        print(end_locations)
+        print("Done with all walks and runs, printing all end locations: ")
+        print(end_locations, end_location_runs)
