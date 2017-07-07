@@ -1,7 +1,8 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import random
 import sys
+import math
 
 def get_random_direction():
         direction = ""
@@ -51,12 +52,22 @@ def take_all_walks(steps):
         endpoints.append(end_location)
     return endpoints
 
-def take_all_runs(runs):
-    endpoints = []
-    for walks in range(runs):
-        end_location = take_walk(runs)
-        endpoints.append(end_location)
-    return endpoints
+
+def average_final_distance(endpoints):
+    total_distance = 0
+    for coords in endpoints:
+        dx = coords[0]
+        dy = coords[1]
+
+        # use the Pythagorean theorem to get distance like last session
+        distance = math.sqrt( dx ** 2 + dy ** 2)
+
+        total_distance += distance
+
+    return total_distance / len(endpoints)
+
+# left off here def average_position(endpoints):
+
 
 
 if __name__ == "__main__":
@@ -69,7 +80,9 @@ if __name__ == "__main__":
             steps = int(sys.argv[2])
 
         end_locations  = take_all_walks(steps)
-        end_location_runs = take_all_runs(runs)
-
-        print("Done with all walks and runs, printing all end locations: ")
-        print(end_locations, end_location_runs)
+        average_displacement = average_final_distance(end_locations)
+        
+        print("Done with all walks, printing all end locations: ")
+        print(end_locations)
+        print("The average distance covered on these walks is: ")
+        print(average_displacement)
