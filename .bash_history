@@ -112,3 +112,34 @@ rm .ssh/
 rmdir .ssh/
 git commit -a -m "commiting changes"
 vim git config
+git init
+git clone https://github.com/isobelsv/nyu-python.git
+git pull
+git pull https://github.com/isobelsv/nyu-python.git
+git status
+git commit -a -m "committing all"
+git config --global user.email "isobelascott@gmail.com"
+git config --global user.name "isobelsv"
+git push
+git remote add nyu-python https://github.com/isobelsv/nyu-python.git
+git push nyu-python
+git config --global push.default simple
+git push --set-upstream nyu-python master
+git status
+git push
+git pull
+git add . 
+git commit -a -m "commiting changes"
+git push
+vim gitconfig
+vim .gitconfig
+vim vimrc
+vim .vimrc
+cd assignment_6
+vim random_walk.py
+./random_walk.py
+vi random_walk.py
+./random_walk.py
+vi .vimrc
+vim random_walk.py
+logout

@@ -66,23 +66,22 @@ def average_final_distance(endpoints):
 
     return total_distance / len(endpoints)
 
-# left off here def average_position(endpoints):
-
-
+# def average_position(endpoints):
+    
 
 if __name__ == "__main__":
-        steps = 10
-        if len(sys.argv) > 1:
-            steps = int(sys.argv[1])
+    steps = 10
+    if len(sys.argv) > 1:
+    steps = int(sys.argv[1])
         
-        runs = 1
-        if len(sys.argv) > 2:
-            steps = int(sys.argv[2])
+    runs = 10
+    if len(sys.argv) > 2:
+    steps = int(sys.argv[2])
 
-        end_locations  = take_all_walks(steps)
-        average_displacement = average_final_distance(end_locations)
+    end_locations  = take_all_walks(runs)
+    average_displacement = average_final_distance(end_locations)
         
-        print("Done with all walks, printing all end locations: ")
-        print(end_locations)
-        print("The average distance covered on these walks is: ")
-        print(average_displacement)
+    print("Done with all walks, printing all end locations: ")
+    print(end_locations)
+    print("The average distance covered on these walks is: ")
+    print(average_displacement)

@@ -1,7 +1,7 @@
- minimal vimrc for new vim users to start with.
+ "" minimal vimrc for new vim users to start with.
  "
  "" Referenced here:
- http://www.benorenstein.com/blog/your-first-vimrc-should-be-nearly-empty/
+ ""http://www.benorenstein.com/blog/your-first-vimrc-should-be-nearly-empty/
 
  " Original Author:  Bram Moolenaar <Bram@vim.org>
  " " Made more minimal by:  Ben Orenstein
@@ -15,7 +15,7 @@
  "
  " " Use Vim settings, rather than Vi settings (much better!).
  " " This must be first, because it changes other options as a side effect.
- " set nocompatible
+ set nocompatible
  "
  " " Make backspace behave in a sane manner.
  set backspace=indent,eol,start
@@ -30,3 +30,4 @@
 set tabstop=4         " number of visual spaces per TAB
 set softtabstop=4    " number of spaces in tab when editing
 set expandtab          " tabs are spaces
+
