@@ -1,0 +1,2 @@
+Should I always get 1 as the average final distance?
+Am I averaging the coordinates instead of the actual distance between the starting point and ending point.
