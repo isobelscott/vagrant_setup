@@ -1,2 +1,3 @@
-# nyu-python
-NYU Python Diploma
+# vagrant set up
+vagrant files for VM, python games 
+
